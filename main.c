@@ -3,7 +3,7 @@
 
 #include "tests.c"
 
-Suite *c00_test_suite(void)
+Suite *suite(void)
 {
     Suite *s;
     TCase *tc_c00;
@@ -12,6 +12,10 @@ Suite *c00_test_suite(void)
 
     /* Here we add the tests cases */
     tcase_add_test(tc_c00, t_ft_put_string);
+    tcase_add_test(tc_c00, t_ft_ultimate_ft);
+    tcase_add_test(tc_c00, t_ft_strlen);
+    tcase_add_test(tc_c00, t_ft_suma);
+    tcase_add_test(tc_c00, t_ft_strcmp);
 
     suite_add_tcase(s, tc_c00);
     return s;
@@ -24,7 +28,7 @@ int main(void)
     SRunner *sr;
 
     setenv("CK_COLOR_ALWAYS", "yes", 1);
-    s = c00_test_suite();
+    s = suite();
     sr = srunner_create(s);
 
     srunner_run_all(sr, CK_SUBUNIT);
