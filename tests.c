@@ -21,6 +21,7 @@ START_TEST(t_ft_put_string)
 }
 END_TEST
 
+/* #1 uncoment here to start having fun
 START_TEST(t_ft_ultimate_ft)
 {
     int a = 0;
@@ -86,3 +87,4 @@ START_TEST(t_ft_strcmp)
     ck_assert_int_eq(want, got);
 }
 END_TEST
+*/

@@ -12,10 +12,13 @@ Suite *suite(void)
 
     /* Here we add the tests cases */
     tcase_add_test(tc_c00, t_ft_put_string);
+
+    /* #2 uncoment here to have fun!
     tcase_add_test(tc_c00, t_ft_ultimate_ft);
     tcase_add_test(tc_c00, t_ft_strlen);
     tcase_add_test(tc_c00, t_ft_suma);
     tcase_add_test(tc_c00, t_ft_strcmp);
+    */
 
     suite_add_tcase(s, tc_c00);
     return s;
